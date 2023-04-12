@@ -20,11 +20,16 @@ function handleChange(event: Event) {
 
 function enviarMensagem(event: Event) {
     event.preventDefault()
-    mensagens.value.push({
-        texto: mensagem.texto,
-        data: new Date()
-    })
-    mensagem.texto = ''
+    if (mensagem.texto !== '') {
+        mensagens.value.push({
+            texto: mensagem.texto,
+            data: new Date()
+        })
+        mensagem.texto = ''
+    }
+    else {
+        alert('Digite uma mensagem')
+    }
 }
 
 
