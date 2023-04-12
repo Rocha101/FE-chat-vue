@@ -1,9 +1,7 @@
 <template>
-    <a-row justify="center">
-        <h1>
-            Chat
-        </h1>
-    </a-row>
+    <div>
+        <h1>Chat</h1>
+    </div>
 </template>
 
 <script lang="ts" setup>

@@ -5,13 +5,7 @@ import Chat from './components/Chat.vue'
 </script>
 
 <template>
-  <a-layout>
-    <a-layout-header style="background-color: white; box-shadow: 3px ;">
-      <Topo />
-    </a-layout-header>
+  <div class="flex flex-col h-full">
     <Chat />
-    <a-layout-footer style="background-color: white; box-shadow: 3px ;">
-      <Input />
-    </a-layout-footer>
-  </a-layout>
+  </div>
 </template>
